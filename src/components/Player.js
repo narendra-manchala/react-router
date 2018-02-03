@@ -9,6 +9,7 @@ const Player = (props) => {
   const player = PlayerAPI.get(
     parseInt(props.match.params.number, 10)
   )
+  // console.log(player)
   if (!player) {
     return <div>Sorry, but the player was not found</div>
   }

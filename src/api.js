@@ -13,6 +13,7 @@ const PlayerAPI = {
   all: function() { return this.players},
   get: function(id) {
     const isPlayer = p => p.number === id
+    console.log(isPlayer)
     return this.players.find(isPlayer)
   }
 }
